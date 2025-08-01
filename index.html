@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amorate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bitcount+Prop+Single:wght@100..900&family=Bruno+Ace+SC&family=Caesar+Dressing&family=Comforter&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Foldit:wght@100..900&family=Grechen+Fuemen&family=Jura:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Solid:wght@100;300;400;900&family=Love+Light&family=Michroma&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&family=Rubik+Mono+One&family=Sedgwick+Ave+Display&family=Sigmar&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&family=Staatliches&family=Tourney:ital,wght@0,100..900;1,100..900&family=UnifrakturMaguntia&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+
+    <div class="top-nav">
+        <div class="top-nav-container">
+            <div class="top-nav-left">
+                <a href="blog.html">Blog</a>
+                <a href="stores.html">Our Stores</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="top-nav-right">
+                <a href="#">Free Shipping Above 竄ｹ499</a>
+                <a href="#">Track Order</a>
+                <a href="#">Customer Care</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification-banner">
+        <div class="notification-scroll">
+            脂 MEGA SALE: Up to 70% OFF on all lingerie! | Free shipping on orders above 竄ｹ499 | Buy 2 Get 1 FREE on selected items | New arrivals every week | Premium quality guaranteed | Easy returns & exchanges | 脂 MEGA SALE: Up to 70% OFF on all lingerie!
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <img src="logo.png" alt="Amorate Logo" onclick="window.location.href='index.html'">
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul class="nav-list" id="navList">
+                    <li><a href="catalog.html" class="nav-link">Catalog</a></li>
+                    <li><a href="new-arrivals.html" class="nav-link">New Arrivals</a></li>
+                    <li><a href="sale.html" class="nav-link">Sale</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="imageCarousel" class="image-carousel">
+        <div class="carousel-track">
+            <img src="main1.jpg" alt="New Collection" class="carousel-image">
+            <img src="main2.jpg" alt="Spring Sale" class="carousel-image">
+            <img src="main3.jpg" alt="Summer Looks" class="carousel-image">
+            <img src="main1.jpg" alt="New Collection" class="carousel-image">
+            <img src="main2.jpg" alt="Spring Sale" class="carousel-image">
+        </div>
+    </section>
+
+    <section>
+        <div class="hero-txt">
+            <h1><span>Dress like you're already</span> <span1>famous.</span1> <span> Start from the inside out.</span></h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="imgg">
+            <img src="amorateee.jpg" onclick="window.location.href='premium.html'">
+        </div>
+    </section>
+
+    <div class="fit-head">
+        <img src="measure.jpg" onclick="window.location.href='fit-guide.html'">
+    </div>
+
+    <section class="fit-guide-section">
+        <h3 class="fit-guide-title">Try Your Fit Guide</h3>
+        <div class="fit-guide-container">
+            <div id="step1" class="fit-section active">
+                <h4 class="fit-section-heading">1. Tell us about your current bra size.</h4>
+                <div class="form-group">
+                    <label for="bandSize" class="form-label">Band Size (e.g., 32, 34):</label>
+                    <input type="number" id="bandSize" class="form-input" placeholder="Enter band size">
+                </div>
+                <div class="form-group">
+                    <label for="cupSize" class="form-label">Cup Size (e.g., A, B, C):</label>
+                    <input type="text" id="cupSize" class="form-input" placeholder="Enter cup size (e.g., C)">
+                </div>
+                <button id="toggleMeasuringTape" class="btn btn-primary">
+                    <i class="fas fa-ruler-horizontal"></i> Don't know size? Use measuring tape.
+                </button>
+
+                <div id="measuringTapeSection" class="measuring-tape-section hidden">
+                    <h5>Measure Yourself (in inches):</h5>
+                    <div class="form-group">
+                        <label for="measureUnderbust" class="form-label">Band (underbust):</label>
+                        <input type="number" id="measureUnderbust" class="form-input" placeholder="e.g., 32">
+                    </div>
+                    <div class="form-group">
+                        <label for="measureOverbust" class="form-label">Overbust (fullest part):</label>
+                        <input type="number" id="measureOverbust" class="form-input" placeholder="e.g., 36">
+                    </div>
+                </div>
+                <button id="next1" class="btn next-button next-button-inactive">Next <i class="fas fa-arrow-right ml-2"></i></button>
+            </div>
+
+            <div id="step2" class="fit-section">
+                <h4 class="fit-section-heading">2. Does your bra have underwires?</h4>
+                <div class="radio-group-vertical">
+                    <div>
+                        <input type="radio" id="underwireYes" name="underwire" value="yes" class="hidden-radio">
+                        <label for="underwireYes" class="custom-radio-label radio-label-flex">
+                            <i class="fas fa-check-circle fa-2x radio-icon-large"></i>
+                            <span class="radio-title">Yes</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="underwireNo" name="underwire" value="no" class="hidden-radio">
+                        <label for="underwireNo" class="custom-radio-label radio-label-flex">
+                            <i class="fas fa-times-circle fa-2x radio-icon-large"></i>
+                            <span class="radio-title">No</span>
+                        </label>
+                    </div>
+                </div>
+                <button id="next2" class="btn next-button next-button-inactive">Next <i class="fas fa-arrow-right ml-2"></i></button>
+            </div>
+
+            <div id="step3" class="fit-section">
+                <h4 class="fit-section-heading">3. How do your straps fit?</h4>
+                <div class="radio-grid">
+                    <div class="radio-option">
+                        <input type="radio" id="strapsDigIn" name="strapFit" value="digIn" class="hidden-radio">
+                        <label for="strapsDigIn" class="custom-radio-label radio-label-flex">
+                            <img src="Straps-digging.webp" alt="Straps Dig In" class="radio-image">
+                            <h1 class="radio-title">They Dig In</h1>
+                            <h2 class="radio-subtitle">Too tight, leaving marks.</h2>
+                        </label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="strapsSlipOff" name="strapFit" value="slipOff" class="hidden-radio">
+                        <label for="strapsSlipOff" class="custom-radio-label radio-label-flex">
+                            <img src="Straps-falling.webp" alt="Straps Slip Off" class="radio-image">
+                            <h1 class="radio-title">They Slip Off</h1>
+                            <h2 class="radio-subtitle">Constantly adjusting them.</h2>
+                        </label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="strapsFitFine" name="strapFit" value="fitFine" class="hidden-radio">
+                        <label for="strapsFitFine" class="custom-radio-label radio-label-flex">
+                            <img src="Straps-fine.webp" alt="Straps Fit Fine" class="radio-image">
+                            <h1 class="radio-title">They Fit Fine</h1>
+                            <h2 class="radio-subtitle">Comfortable and supportive.</h2>
+                        </label>
+                    </div>
+                </div>
+                <button id="next3" class="btn next-button next-button-inactive">Next <i class="fas fa-arrow-right ml-2"></i></button>
+            </div>
+
+            <div id="step4" class="fit-section">
+                <h4 class="fit-section-heading">4. How does your band fit?</h4>
+                <div class="radio-grid">
+                    <div>
+                        <input type="radio" id="bandDiggingIn" name="bandFit" value="diggingIn" class="hidden-radio">
+                        <label for="bandDiggingIn" class="custom-radio-label radio-label-flex">
+                            <img src="band-tight.webp" alt="Band Digging In" class="radio-image">
+                            <span class="radio-title">Band digging in</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bandRidesUp" name="bandFit" value="ridesUp" class="hidden-radio">
+                        <label for="bandRidesUp" class="custom-radio-label radio-label-flex">
+                            <img src="Band-riding-up.webp" alt="Band Rides Up" class="radio-image">
+                            <span class="radio-title">Band rides up</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="breastsSpillBelow" name="bandFit" value="spillBelow" class="hidden-radio">
+                        <label for="breastsSpillBelow" class="custom-radio-label radio-label-flex">
+                            <img src="Spilling-bottom_1.webp" alt="Breasts Spill Below" class="radio-image">
+                            <span class="radio-title">Breasts spill below the band</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bandFitsFine" name="bandFit" value="fitsFine" class="hidden-radio">
+                        <label for="bandFitsFine" class="custom-radio-label radio-label-flex">
+                            <img src="Band-fine.webp" alt="Band Fits Fine" class="radio-image">
+                            <span class="radio-title">Band fits fine</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="bandFitSuggestions" class="band-suggestions hidden">
+                    <p id="bandSuggestionText" class="band-suggestion-text"></p>
+                </div>
+
+                <button id="next4" class="btn next-button next-button-inactive">Next <i class="fas fa-arrow-right ml-2"></i></button>
+            </div>
+
+            <div id="step5" class="fit-section">
+                <h4 class="fit-section-heading">5. How do your cups fit?</h4>
+                <div class="radio-grid">
+                    <div>
+                        <input type="radio" id="cupSpillingTop" name="cupFit" value="spillingTop" class="hidden-radio">
+                        <label for="cupSpillingTop" class="custom-radio-label radio-label-flex">
+                            <img src="Cup-spillage.webp" alt="Spilling from the top" class="radio-image">
+                            <span class="radio-title">Spilling from the top</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cupSpillingSides" name="cupFit" value="spillingSides" class="hidden-radio">
+                        <label for="cupSpillingSides" class="custom-radio-label radio-label-flex">
+                            <img src="side-spillage.webp" alt="Spilling from the sides" class="radio-image">
+                            <span class="radio-title">Spilling from the sides</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cupGapingTop" name="cupFit" value="gapingTop" class="hidden-radio">
+                        <label for="cupGapingTop" class="custom-radio-label radio-label-flex">
+                            <img src="Cup-gaping.webp" alt="Gaping at the top" class="radio-image">
+                            <span class="radio-title">Gaping at the top</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cupWrinkling" name="cupFit" value="wrinkling" class="hidden-radio">
+                        <label for="cupWrinkling" class="custom-radio-label radio-label-flex">
+                            <img src="Fabric-wrinkling_1.webp" alt="Cup is wrinkling" class="radio-image">
+                            <span class="radio-title">Cup is wrinkling</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cupFitFine" name="cupFit" value="fitFine" class="hidden-radio">
+                        <label for="cupFitFine" class="custom-radio-label radio-label-flex">
+                            <img src="Cups-fine.webp" alt="Cup fits fine" class="radio-image">
+                            <span class="radio-title">Cup fits fine</span>
+                        </label>
+                    </div>
+                </div>
+                <button id="next5" class="btn next-button next-button-inactive">Next <i class="fas fa-arrow-right ml-2"></i></button>
+            </div>
+
+            <div id="step6" class="fit-section">
+                <h4 id="breastShapeIntro" class="fit-section-heading clickable-heading">
+                    6. Now let's talk about your breast shape. <span class="sub-text">(Click to continue)</span>
+                    <i class="fas fa-angle-right ml-2"></i>
+                </h4>
+            </div>
+
+            <div id="step7" class="fit-section">
+                <h4 class="fit-section-heading">7. How firm are your breasts?</h4>
+                <div class="radio-grid">
+                    <div>
+                        <input type="radio" id="firmBreasts" name="breastFirmness" value="firm" class="hidden-radio">
+                        <label for="firmBreasts" class="custom-radio-label radio-label-flex">
+                            <img src="firm_profile_1.webp" alt="Firm breasts" class="radio-image">
+                            <span class="radio-title">Firm</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="saggingBreasts" name="breastFirmness" value="sagging" class="hidden-radio">
+                        <label for="saggingBreasts" class="custom-radio-label radio-label-flex">
+                            <img src="settled_profile_1.webp" alt="Sagging breasts" class="radio-image">
+                            <span class="radio-title">Sagging</span>
+                        </label>
+                    </div>
+                </div>
+                <button id="next7" class="btn next-button next-button-inactive">Next <i class="fas fa-arrow-right ml-2"></i></button>
+            </div>
+
+            <div id="step8" class="fit-section">
+                <h4 class="fit-section-heading">8. Are your breasts full at the top?</h4>
+                <div class="radio-grid">
+                    <div>
+                        <input type="radio" id="fullTop" name="breastFullness" value="full" class="hidden-radio">
+                        <label for="fullTop" class="custom-radio-label radio-label-flex">
+                            <img src="full_profile.webp" alt="Full at the top" class="radio-image">
+                            <span class="radio-title">Full</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="shallowTop" name="breastFullness" value="shallow" class="hidden-radio">
+                        <label for="shallowTop" class="custom-radio-label radio-label-flex">
+                            <img src="shallow_profile_1.webp" alt="Shallow at the top" class="radio-image">
+                            <span class="radio-title">Shallow</span>
+                        </label>
+                    </div>
+                </div>
+                <button id="next8" class="btn next-button next-button-inactive">Next <i class="fas fa-arrow-right ml-2"></i></button>
+            </div>
+
+            <div id="step9" class="fit-section">
+                <h4 class="fit-section-heading">9. How much gap is in between your breasts?</h4>
+                <div class="radio-grid">
+                    <div>
+                        <input type="radio" id="closeSet" name="breastGap" value="closeSet" class="hidden-radio">
+                        <label for="closeSet" class="custom-radio-label radio-label-flex">
+                            <img src="closeset_profile.webp" alt="Close set breasts" class="radio-image">
+                            <span class="radio-title">Close set</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="wideSet" name="breastGap" value="wideSet" class="hidden-radio">
+                        <label for="wideSet" class="custom-radio-label radio-label-flex">
+                            <img src="separated_profile.webp" alt="Wide set breasts" class="radio-image">
+                            <span class="radio-title">Wide set</span>
+                        </label>
+                    </div>
+                </div>
+                <button id="calculateSize" class="btn next-button next-button-inactive">Get My Bra Size <i class="fas fa-check ml-2"></i></button>
+            </div>
+
+            <div id="step10" class="fit-section size-chart-section">
+                <h4 class="size-chart-title">Your Recommended Bra Size <i class="fas fa-bra"></i></h4>
+                <div class="size-chart-content">
+                    <p class="size-chart-intro">Based on your measurements and feedback, we recommend the following bra size:</p>
+                    <div id="braSizeResult" class="bra-size-result">
+                        </div>
+                    <p class="size-chart-note">
+                        This is an estimated size. For the most accurate fit, always consider your personal comfort and the specific style of the bra.
+                    </p>
+                </div>
+                <button id="startOver" class="btn btn-pink-solid">
+                    <i class="fas fa-redo"></i> Start Over
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="imggg-text">
+        <img src="varieties.jpg" onclick="window.location.href='categories.html'">
+    </div>
+
+    <div class="image-gallery-container">
+        <div class="image-gallery">
+            <div class="gallery-image-box" onclick="window.location.href='bras-panties.html'">
+                <img src="young-pretty-girl-white-underwear-have-head-pain-isolated-white-wall.jpg" alt="Lingerie Image 1">
+                <h3 class="gallery-title">Bra & Panty</h3>
+            </div>
+            <div class="gallery-image-box" onclick="window.location.href='shapewear.html'">
+                <img src="portrait-woman-wearing-shapewear.jpg" alt="Lingerie Image 2">
+                <h3 class="gallery-title">Shapewears</h3>
+            </div>
+            <div class="gallery-image-box" onclick="window.location.href='bra-tops.html'">
+                <img src="portrait-woman-shapewear.jpg" alt="Lingerie Image 3">
+                <h3 class="gallery-title">Bra Tops</h3>
+            </div>
+            <div class="gallery-image-box" onclick="window.location.href='nightsuits.html'">
+                <img src="young-female-model-sleeping-underwear.jpg" alt="Lingerie Image 4">
+                <h3 class="gallery-title">NightSuits</h3>
+            </div>
+            <div class="gallery-image-box" onclick="window.location.href='activewear.html'">
+                <img src="concentrated-curly-brunette-fitness-woman.jpg" alt="Lingerie Image 5">
+                <h3 class="gallery-title">Active Wears</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="panty">
+        <video autoplay loop muted onclick="window.location.href='panties.html'">
+            <source src="ppan.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="newarr">
+        <video autoplay loop muted onclick="window.location.href='new-arrivals.html'">
+            <source src="newar1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="newarr1">
+        <img src="AMORATEEE11.jpg" onclick="window.location.href='premium-collection.html'">
+    </div>
+
+   
+    <div class="about-us">
+        <img src="ABOUT US.png" onclick="window.location.href='about.html'">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Top Categories</h3>
+                    <ul>
+                        <li><a href="new-arrivals.html">New Arrivals</a></li>
+                        <li><a href="bras.html">Bras</a></li>
+                        <li><a href="nightwear.html">Nightwear</a></li>
+                        <li><a href="activewear.html">Activewear</a></li>
+                        <li><a href="panties.html">Panties</a></li>
+                        <li><a href="shapewear.html">Shapewear</a></li>
+                        <li><a href="winterwear.html">Winterwear</a></li>
+                        <li><a href="maternity.html">Maternity Wear</a></li>
+                        <li><a href="beauty.html">Beauty</a></li>
+                        <li><a href="girls.html">Amorate Girls</a></li>
+                        <li><a href="sale.html">Lingerie Sale & Offer</a></li>
+                        <li><a href="swimwear.html">Swimwear/Beachwear</a></li>
+                        <li><a href="brands.html">Top Lingerie Brand</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="returns.html">Returns & Exchange Policy</a></li>
+                        <li><a href="track.html">Track your Order</a></li>
+                        <li><a href="packaging.html">Discreet Packaging</a></li>
+                        <li><a href="payment.html">Payment Policy</a></li>
+                        <li><a href="support.html">Customer Support</a></li>
+                        <li><a href="caution.html">Caution Notice</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Discover Zivame</h3>
+                    <ul>
+                        <li><a href="about.html">About Amorate</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="fit-guide.html">Find Your Fit</a></li>
+                        <li><a href="calculator.html">Bra Size Calculator</a></li>
+                        <li><a href="bras-by-size.html">Bras By Size</a></li>
+                        <li><a href="shop-sizes.html">Shop By Sizes</a></li>
+                        <li><a href="shop-colors.html">Shop By Colours</a></li>
+                        <li><a href="stores.html">Amorate Store Locator</a></li>
+                        <li><a href="reviews.html">Amorate Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Circle of Rrau Enterprises</h3>
+                    <ul>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="find-store.html">Find a Store</a></li>
+                    </ul>
+                </div>
+            </div>
+
+          
+            <div class="footer-column">
+                <h3>Get in touch</h3>
+                <p><strong>Address:</strong>Panipat , Haryana (132103)<br>
+                <p><strong>Phone:</strong>+91 90058 62836</p>
+                <p><strong>Email:</strong> feedback@amorate.com</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Amorate. All rights reserved. | Privacy Policy | Terms of Service</p>
+                <p>Made by Mohit Mudgil</p>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
