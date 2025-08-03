@@ -82,7 +82,7 @@ img, video {
     color: #fff;
     text-align: center;
     position: fixed;
-    top: 35px; /* Adjusted to be below the smaller top-nav */
+    top: 42px; /* Adjusted to be below the smaller top-nav */
     left: 0;
     right: 0;
     z-index: 1001;
@@ -94,8 +94,8 @@ img, video {
     display: inline-block;
     white-space: nowrap;
     /* The animation now starts from the right edge and moves to the left */
-    animation: marquee 20s linear infinite;
-    font-size: 0.5rem;
+    animation: marquee 35s linear infinite;
+    font-size: 0.875rem;
     color: #333;
 }
 
@@ -108,7 +108,7 @@ img, video {
     background-color: #ffffff;
     border-bottom: 1px solid #e9ecef;
     position: fixed;
-    top: 52px; /* Adjusted to be below the notification banner */
+    top: 60px; /* Adjusted to be below the notification banner */
     left: 0;
     right: 0;
     z-index: 1000;
@@ -122,7 +122,7 @@ img, video {
 }
 
 .header img {
-    height: 30px; /* Made the logo smaller */
+    height: 50px; /* Made the logo smaller */
     width: auto;
 }
 
@@ -196,18 +196,18 @@ img, video {
 }
  
 
-.imgg-text img{
-    width:70%;
-}
 .imgg img, .panty video, .newarr video, .newarr1 img, .about-us img {
     width: 100%;
 }
 
+.panty video{
+    margin-top:2rem;
+}
 /* Image Carousel */
 .image-carousel {
     overflow: hidden;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
 
 .carousel-track {
@@ -223,13 +223,13 @@ img, video {
 
 /* Image Gallery */
 .image-gallery-container {
-    padding: 1rem;
+ margin-right:3rem;
 }
 
 .image-gallery {
     display: flex;
     flex-direction: column; /* Stack on mobile */
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .gallery-image-box {
@@ -238,6 +238,14 @@ img, video {
     border-radius: 8px;
     transition: transform 0.3s ease;
     cursor: pointer;
+}
+.imggg-text img{
+height:40px;
+margin-top:2rem;
+justify-content:center;
+margin-left:4rem;
+margin-bottom:1rem;
+
 }
 
 .gallery-image-box img {
@@ -248,9 +256,14 @@ img, video {
 }
 
 .gallery-image-box:hover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
+
+.fit-head{
+    margin-top:5rem;
+
+}
 .gallery-title {
     position: absolute;
     bottom: 1rem;
@@ -299,12 +312,14 @@ img, video {
 
 .form-label {
     display: block;
+    font-family: "Jura", sans-serif;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
 .form-input {
     width: 100%;
+    font-family: "Jura", sans-serif;
     padding: 0.5rem;
     box-sizing: border-box;
 }
@@ -314,6 +329,7 @@ img, video {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Jura", sans-serif;
     font-weight: bold;
     transition: background-color 0.3s;
     width: 100%;
@@ -343,6 +359,7 @@ img, video {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-family: "Jura", sans-serif;
     text-align: center;
 }
 
@@ -350,6 +367,21 @@ img, video {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
     gap: 0.5rem;
+}
+
+
+.visitus{
+    display:flex;
+    align-items:Center;
+
+}
+.visitus a{
+font-size:1rem;
+text-decoration:none;
+color:black;
+}
+.visitus img{
+    height:500px;
 }
 
 .custom-radio-label {
@@ -361,6 +393,7 @@ img, video {
     border-radius: 8px;
     padding: 0.5rem;
     cursor: pointer;
+    font-family: "Jura", sans-serif;
     transition: all 0.3s ease;
     height: 100%;
     text-align: center;
@@ -551,3 +584,4 @@ img, video {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
